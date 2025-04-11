@@ -144,42 +144,22 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="{{ url_for('habits.base') }}">HabitNEST</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('habits.base') }}">
-                            <i class='bx bxs-dashboard'></i> Dashboard
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('habits.analytics') }}">
-                            <i class='bx bx-line-chart'></i> Analytics
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('habits.achievements') }}">
-                            <i class='bx bx-trophy'></i> Achievements
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{ url_for('habits.calendar') }}">
-                            <i class='bx bx-calendar'></i> Calendar
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('auth.logout') }}">
-                            <i class='bx bx-log-out'></i> Logout
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="container">
+      <a class="navbar-brand" href="base.html">HabitNEST</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="base.html"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="analytics.html"><i class='bx bx-line-chart'></i> Analytics</a></li>
+          <li class="nav-item"><a class="nav-link" href="achievements.html"><i class='bx bx-trophy'></i> Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendar.html"><i class='bx bx-calendar'></i> Calendar</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class='bx bx-log-out'></i> Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <!-- Calendar Content -->
     <div class="calendar-container">
